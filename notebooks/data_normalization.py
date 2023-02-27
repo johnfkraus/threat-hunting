@@ -5,6 +5,7 @@ import subprocess
 def dostuff():
     subprocess.run(["ls", "-la"])
 
+
 def replace_dots_with_underscores_in_df_column_names(df):
     # rename columns without having to duplicate columns
     df.columns = [c.replace(".", "_") for c in list(df.columns)]
